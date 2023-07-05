@@ -66,7 +66,7 @@
 }
 
 .gantt-div{
-  max-width: 100%;
+  width: 100%;
 }
 
 .empty-gantt-div {
@@ -79,9 +79,13 @@
 
 }
 
-.gantt .bar-wrapper {
+/* .gantt .bar-wrapper {
   pointer-events: none;
-}
+} */
+
+/* .gantt .bar-wrapper.active .bar {
+  cursor: pointer;
+} */
 
 
 @media screen and (max-width: 640px) {

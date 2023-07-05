@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
-import Chart from "@components/Chart";
+import GanttChart from "@components/GanttChart";
 
 const ViewChart = () => {
     const router = useRouter();
@@ -33,7 +33,7 @@ const ViewChart = () => {
     }, [promptId])
 
     return (
-        <Chart
+        <GanttChart
             creator={creatorName}
             post={post}
         />

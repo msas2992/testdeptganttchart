@@ -3,8 +3,8 @@ import Nav from '@components/Nav'
 import Provider from '@components/Provider'
 
 export const metadata = {
-    title: "NextJs",
-    description : "Learning Next JS Component and Structure"
+    title: "Gantt Chart",
+    description : "Planning and Scheduling your project"
 }
 
 const RootLayout = ({ children}) => {
