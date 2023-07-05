@@ -1,0 +1,55 @@
+.font-14 {
+    font-size: 14px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.form-column:first-child{
+    width: 7%;
+}
+
+.form-column:nth-child(2) {
+    width: 10%;
+}
+
+.form-column:nth-child(3) {
+    width: 29%;
+}
+
+.form-column:nth-child(4),
+.form-column:nth-child(5){
+    width: 19%;
+}
+
+.form-column:nth-child(6) {
+    width: 9%;
+}
+
+.form-column:last-child {
+    width: 7%;
+}
+
+.delete_btn {
+    /* @apply w-full flex rounded-lg mt-3 p-2 text-sm text-gray-500 outline-0; */
+    @apply w-9 h-9 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer mt-3 p-4;
+}
+
+.add_btn {
+    /* @apply w-full flex rounded-lg mt-3 p-2 text-sm text-gray-500 outline-0; */
+    @apply w-9 h-9 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer p-4;
+}
