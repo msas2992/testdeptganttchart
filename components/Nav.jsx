@@ -11,6 +11,10 @@ const Nav = () => {
   const [providers, setProviders] = useState(null);
   const [toggleDropdown, setToggleDropdown] = useState(false)
 
+  const handleNewUser = () => {
+    alert("Please contact admin at Skype id, live:msaifuladham_1")
+  }
+
   useEffect(() => {
     const setUpProviders = async () => {
       const response = await getProviders();
@@ -38,10 +42,18 @@ const Nav = () => {
       <div className='sm:flex hidden'>
         {session?.user ? (
           <div className='flex gap-3 md:gap-5'>
-            <Link href="/create-prompt"
-            className='black_btn'>
-              Create Project
-            </Link>
+            {session?.user.pneUser ? (
+              <Link href="/create-prompt"
+              className='black_btn'>
+                Create Project
+              </Link>
+            ):(
+              <button href="/"
+              onClick={handleNewUser}
+              className='black_btn'>
+                Contact Admin
+              </button>
+            )}
 
             <button type='button' onClick={signOut} className='outline_btn'>
               Sign Out

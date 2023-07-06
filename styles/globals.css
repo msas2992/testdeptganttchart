@@ -76,17 +76,11 @@
   flex-direction: column;
   align-items: center;
   padding: 40px;
-
 }
 
-/* .gantt .bar-wrapper {
-  pointer-events: none;
-} */
-
-/* .gantt .bar-wrapper.active .bar {
-  cursor: pointer;
-} */
-
+.text-gray{
+  color: gray;
+}
 
 @media screen and (max-width: 640px) {
   .main {

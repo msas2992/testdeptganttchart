@@ -16,8 +16,9 @@ const handler = NextAuth({
             const sessionUser = await User.findOne({
                 email: session.user.email
             })
-    
+            console.log(sessionUser)
             session.user.id = sessionUser._id.toString();
+            session.user.pneUser = sessionUser.pneUser;
     
             return session;
         },
@@ -33,6 +34,7 @@ const handler = NextAuth({
                         email: profile.email,
                         username: profile.name.replace(" ","").toLowerCase(),
                         image: profile.picture,
+                        pneUser: false
                     })
                 }
                 return true

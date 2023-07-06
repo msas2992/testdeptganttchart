@@ -7,7 +7,7 @@ const GanttChart = ({ creator, post }) => {
   let data = []
   let options = []
 
-  if(tasks.length>0){
+  if(tasks.length > 0){
 
     const columns = [
       { type: "string", label: "Task ID" },
